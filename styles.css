@@ -1,0 +1,25 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gradient-container {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#ff0000, #00ff00); /* Initial colors */
+}
+
+.click-marker {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: opacity 1s ease; /* Add this line for fading effect */
+}
+
+.click-marker.fade-out {
+    opacity: 0;
+}
